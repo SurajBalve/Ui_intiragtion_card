@@ -1,0 +1,16 @@
+{
+  "_version": "3.1.0",
+  "identification": {
+    "id": "sap.workzone.cpkg.card.sample.space1",
+    "title": "{{SPACE_TITLE1}}",
+    "entityType": "space"
+  },
+  "payload": {
+    "contentNodes": [
+      {
+        "type": "workpage",
+        "id": "sap.workzone.cpkg.card.sample.workpage1"
+      }
+    ]
+  }
+}

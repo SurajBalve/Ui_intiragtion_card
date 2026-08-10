@@ -1,0 +1,40 @@
+{
+  "_version": "3.2.0",
+  "identification": {
+    "id": "sap.workzone.cpkg.card.sample.workpage1",
+    "entityType": "workpage"
+  },
+  "payload": {
+    "workpageConfig": {
+      "title": "{{PAGE_TITLE1}}"
+    },
+    "rows": [
+      {
+        "id": "row-1",
+        "rowConfig": {},
+        "columns": [
+          {
+            "id": "col-11",
+            "columnConfig": {},
+            "cells": [
+              {
+                "id": "cell-111",
+                "cellConfig": {},
+                "widgets": [
+                  {
+                    "id": "widg-1111",
+                    "viz": {
+                      "appId": "sap.workzone.cpkg.card.sample.app",
+                      "vizId": "sap.workzone.cpkg.card.sample.viz"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+         
+        ]
+      }
+    ]
+  }
+}

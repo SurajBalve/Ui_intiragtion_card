@@ -1,0 +1,33 @@
+{
+	"sample-role1": {
+		"type": "role",
+		"src": {
+			"from": "./internalsamples/cdm-samples/src",
+			"content": "role1.json"
+		}
+	},
+	"sample-space1": {
+		"type": "space",
+		"src": {
+			"from": "./internalsamples/cdm-samples/src",
+			"content": "space1.json"
+		}
+	},
+	"sample-workpage1": {
+		"type": "workpage",
+		"src": {
+			"from": "./internalsamples/cdm-samples/src",
+			"content": "workpage1.json"
+		}
+	},
+	"card-sample": {
+		"type": "card",
+		"src": {
+			"from": "./internalsamples/card",
+			"path": "./",
+			"build": "",
+			"package": "sap-workzone-cpkg-card-sample.zip",
+			"manifest": "src/manifest.json"
+		}
+	}
+}

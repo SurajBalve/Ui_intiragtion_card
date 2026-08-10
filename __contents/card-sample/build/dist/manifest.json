@@ -1,0 +1,58 @@
+{
+	"_version": "1.18.0",
+	"sap.app": {
+		"id": "sap.workzone.cpkg.card.sample",
+		"type": "card",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{TITLE}}",
+		"subTitle": "{{SUBTITLE}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "{{SHORTTITLE}}",
+		"info": "{{INFO}}",
+		"description": "{{DESCRIPTION}}",
+		"tags": {
+			"keywords": [
+				"{{KEYWORD1}}"
+			]
+		}
+	},
+	"sap.card": {
+		"type": "List",
+		"designtime": "dt/configuration",
+		"header": {
+			"title": "{{TITLE}}",
+			"subTitle": "Translation with model. {i18n>SUBTITLE}",
+			"icon": {
+				"src": "sap-icon://product"
+			}
+		},
+		"content": {
+			"data": {
+				"request": {
+					"url": "https://services.odata.org/V4/Northwind/Northwind.svc/Invoices",
+					"parameters": {
+						"$format": "json"
+					}
+				},
+				"path": "/value"
+			},
+			"maxItems": 5,
+			"item": {
+				"title": "{CustomerID},{CustomerName}",
+				"description": "{ProductID},{ProductName}",
+				"icon": {
+					"src": "sap-icon://receipt"
+				},
+				"info": {
+					"value": "{UnitPrice}"
+				},
+				"highlight": "{=${UnitPrice} <60 ? 'Success' : 'Warning'}"
+			}
+		}
+	},
+	"sap.ui5": {
+		"flexBundle": false
+	}
+}

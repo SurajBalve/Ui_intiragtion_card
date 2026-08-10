@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/integration/Extension"],function(t){"use strict";var n=t.extend("sap.workzone.cpkg.card.sample.ext.extension");n.prototype.init=function(){t.prototype.init.apply(this,arguments);this.setActions([{type:"Navigation",parameters:{url:"https://training.sap.com/"},icon:"sap-icon://learning-assistant",target:"_blank",text:"External Link"}]);this.setFormatters({toUpperCase:function(t){return t.toUpperCase()}})};n.prototype.getData=function(){};return n});
+//# sourceMappingURL=extension.js.map

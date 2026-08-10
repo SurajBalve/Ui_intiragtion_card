@@ -1,0 +1,283 @@
+{
+	"sap.package": {
+		"id": "ns.ui_card",
+		"__id": "sap.workzone.cpkg.card.sample.sample",
+		"packageVersion": {
+			"version": "1.0.0",
+			"upgradeNotification": "all"
+		},
+		"i18n": "i18n/i18n.properties",
+		"icon": "sap-icon://accept",
+		"title": "Multi_UIcards_Integration",
+		"subTitle": "",
+		"shortTitle": "",
+		"info": "",
+		"description": "",
+		"tags": {
+			"keywords": []
+		},
+		"vendor": {
+			"id": "",
+			"name": "",
+			"url": ""
+		},
+		"products": "",
+		"categories": "",
+		"scope": "external",
+		"license": {
+			"text": "",
+			"url": ""
+		},
+		"homepage": {
+			"text": "",
+			"url": ""
+		},
+		"support": {
+			"url": ""
+		},
+		"contents": [
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "sap.workzone.cpkg.card.sample",
+						"type": "card",
+						"i18n": "i18n/i18n.properties",
+						"title": "{{TITLE}}",
+						"subTitle": "{{SUBTITLE}}",
+						"shortTitle": "{{SHORTTITLE}}",
+						"info": "{{INFO}}",
+						"description": "{{DESCRIPTION}}",
+						"tags": {
+							"keywords": [
+								"{{KEYWORD1}}"
+							]
+						},
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-sample"
+			}
+		],
+		"documentation": {
+			"url": ""
+		},
+		"consumption": [],
+		"dependencies": {
+			"products": [],
+			"services": []
+		},
+		"destinations": [],
+		"cdmEntities": [
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "sap.workzone.cpkg.card.sample.role1",
+					"title": "{{ROLE_TITLE1}}",
+					"entityType": "role"
+				},
+				"payload": {
+					"spaces": [
+						{
+							"id": "sap.workzone.cpkg.card.sample.space1"
+						}
+					],
+					"apps": [
+						{
+							"id": "sap.workzone.cpkg.card.sample.app"
+						},
+						{
+							"id": "sap.workzone.cpkg.card.sample.app1"
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {}
+					}
+				]
+			},
+			{
+				"_version": "3.1.0",
+				"identification": {
+					"id": "sap.workzone.cpkg.card.sample.space1",
+					"title": "{{SPACE_TITLE1}}",
+					"entityType": "space"
+				},
+				"payload": {
+					"contentNodes": [
+						{
+							"type": "workpage",
+							"id": "sap.workzone.cpkg.card.sample.workpage1"
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "sap.workzone.cpkg.card.sample.workpage1",
+					"entityType": "workpage"
+				},
+				"payload": {
+					"workpageConfig": {
+						"title": "{{PAGE_TITLE1}}"
+					},
+					"rows": [
+						{
+							"id": "row-1",
+							"rowConfig": {},
+							"columns": [
+								{
+									"id": "col-11",
+									"columnConfig": {},
+									"cells": [
+										{
+											"id": "cell-111",
+											"cellConfig": {},
+											"widgets": [
+												{
+													"id": "widg-1111",
+													"viz": {
+														"appId": "sap.workzone.cpkg.card.sample.app",
+														"vizId": "sap.workzone.cpkg.card.sample.viz"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "sap.workzone.cpkg.card.sample.app",
+					"title": "{{TITLE}}",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"sap.workzone.cpkg.card.sample.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.18.0",
+								"sap.app": {
+									"id": "sap.workzone.cpkg.card.sample",
+									"type": "card",
+									"i18n": "i18n/i18n.properties",
+									"title": "{{TITLE}}",
+									"subTitle": "{{SUBTITLE}}",
+									"applicationVersion": {
+										"version": "1.0.0"
+									},
+									"shortTitle": "{{SHORTTITLE}}",
+									"info": "{{INFO}}",
+									"description": "{{DESCRIPTION}}",
+									"tags": {
+										"keywords": [
+											"{{KEYWORD1}}"
+										]
+									}
+								},
+								"sap.card": {
+									"type": "List",
+									"designtime": "dt/configuration",
+									"header": {
+										"title": "{{TITLE}}",
+										"subTitle": "Translation with model. {i18n>SUBTITLE}",
+										"icon": {
+											"src": "sap-icon://product"
+										}
+									},
+									"content": {
+										"data": {
+											"request": {
+												"url": "https://services.odata.org/V4/Northwind/Northwind.svc/Invoices",
+												"parameters": {
+													"$format": "json"
+												}
+											},
+											"path": "/value"
+										},
+										"maxItems": 5,
+										"item": {
+											"title": "{CustomerID},{CustomerName}",
+											"description": "{ProductID},{ProductName}",
+											"icon": {
+												"src": "sap-icon://receipt"
+											},
+											"info": {
+												"value": "{UnitPrice}"
+											},
+											"highlight": "{=${UnitPrice} <60 ? 'Success' : 'Warning'}"
+										}
+									}
+								}
+							},
+							"vizResources": {
+								"artifactId": "sap.workzone.cpkg.card.sample"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"TITLE": "Card Template Title",
+							"SUBTITLE": "Card Template Subitle",
+							"SHORTTITLE": "Card Template Short Title",
+							"INFO": "Card Template Info",
+							"DESCRIPTION": "Card Template Description",
+							"KEYWORD1": "Keyword"
+						}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {
+							"TITLE": "Card Template Title",
+							"SUBTITLE": "Card Template Subitle",
+							"SHORTTITLE": "Card Template Short Title",
+							"INFO": "Card Template Info",
+							"DESCRIPTION": "Card Template Description",
+							"KEYWORD1": "Keyword"
+						}
+					}
+				]
+			}
+		]
+	}
+}

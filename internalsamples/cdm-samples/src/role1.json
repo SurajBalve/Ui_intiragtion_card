@@ -1,0 +1,23 @@
+{
+  "_version": "3.2.0",
+  "identification": {
+    "id": "sap.workzone.cpkg.card.sample.role1",
+    "title": "{{ROLE_TITLE1}}",
+    "entityType": "role"
+  },
+  "payload": {
+    "spaces": [
+      {
+        "id": "sap.workzone.cpkg.card.sample.space1"
+      }
+    ],
+    "apps": [
+      {
+        "id": "sap.workzone.cpkg.card.sample.app"
+      },
+      {
+        "id": "sap.workzone.cpkg.card.sample.app1"
+      }
+    ]
+  }
+}
