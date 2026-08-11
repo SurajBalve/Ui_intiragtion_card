@@ -29,5 +29,15 @@
 			"package": "sap-workzone-cpkg-card-sample.zip",
 			"manifest": "src/manifest.json"
 		}
+	},
+	"welcome-sample":{
+		"type": "card",
+		"src": {
+			"from": "./internalsamples/welcome",
+			"path": "./",
+			"build": "",
+			"package": "com-parle-welcome.zip",
+			"manifest": "manifest.json"
+		}
 	}
 }

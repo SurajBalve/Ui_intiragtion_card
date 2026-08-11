@@ -60,6 +60,22 @@
 					}
 				},
 				"baseURL": "artifacts/card-sample"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "com.parle.welcome",
+						"type": "card",
+						"title": "Welcome ",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/welcome-sample"
 			}
 		],
 		"documentation": {
@@ -91,6 +107,9 @@
 						},
 						{
 							"id": "sap.workzone.cpkg.card.sample.app1"
+						},
+						{
+							"id": "com.parle.welcome.app"
 						}
 					]
 				},
@@ -160,6 +179,25 @@
 														"appId": "sap.workzone.cpkg.card.sample.app",
 														"vizId": "sap.workzone.cpkg.card.sample.viz"
 													}
+												}
+											]
+										},
+										{
+											"id": "col-12",
+											"columnConfig": {},
+											"cells": [
+												{
+													"id": "cell-121",
+													"cellConfig": {},
+													"widgets": [
+														{
+															"id": "widg-1211",
+															"viz": {
+																"appId": "com.parle.welcome.app",
+																"vizId": "com.parle.welcome.viz"
+															}
+														}
+													]
 												}
 											]
 										}
@@ -275,6 +313,94 @@
 							"DESCRIPTION": "Card Template Description",
 							"KEYWORD1": "Keyword"
 						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "com.parle.welcome.app",
+					"title": "Welcome ",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"com.parle.welcome.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "com.parle.welcome",
+									"type": "card",
+									"title": "Welcome ",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.0"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "com.parle.welcome.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {}
+										}
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"design": "Transparent",
+									"designtime": "dt/configuration",
+									"configuration": {
+										"parameters": {
+											"firstName": {
+												"value": "Suraj",
+												"type": "string",
+												"label": "Workzone user First name",
+												"description": "First name of the logged-in Workzone user"
+											},
+											"category": {
+												"value": "category",
+												"label": "Color"
+											}
+										}
+									}
+								},
+								"sap.platform.mobilecards": {
+									"compatible": true
+								}
+							},
+							"vizResources": {
+								"artifactId": "com.parle.welcome"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {}
 					}
 				]
 			}

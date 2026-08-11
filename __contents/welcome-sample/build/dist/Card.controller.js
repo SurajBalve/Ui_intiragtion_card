@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel"],function(e,t){"use strict";return e.extend("com.parle.welcome.Card",{onInit:function(){var e=this.getOwnerComponent(),o=e.card.getCombinedParameters(),i=o.firstName,n=new t({welcomeText:"Welcome "+i+"!",greetingMessage:'"Positive energy leads to positive outcomes. Let\'s create something amazing today!"'});this.getView().setModel(n,"greetings")}})});
+//# sourceMappingURL=Card.controller.js.map

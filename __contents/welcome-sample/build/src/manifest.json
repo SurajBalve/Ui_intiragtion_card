@@ -1,0 +1,59 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "com.parle.welcome",
+		"type": "card",
+		"title": "Welcome ",
+		"subTitle": "",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"phone": true,
+			"tablet": true
+		},
+		"icons": {
+			"icon": "sap-icon://technical-object"
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.parle.welcome.View",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.38",
+			"libs": {
+				"sap.m": {}
+			}
+		}
+	},
+	"sap.card": {
+		"type": "Component",
+		"design": "Transparent",
+		"designtime": "dt/configuration",
+		"configuration": {
+			"parameters": {
+				"firstName": {
+					"value": "Suraj",
+					"type": "string",
+					"label": "Workzone user First name",
+					"description": "First name of the logged-in Workzone user"
+				},
+				"category" : {
+					"value": "category",
+					"label": "Color"
+				}
+			}
+		}
+	},
+	"sap.platform.mobilecards": {
+		"compatible": true
+	}
+}

@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:html="http://www.w3.org/1999/xhtml" width="100%" displayBlock="true" controllerName="com.parle.welcome.Card">
+
+  <html:style>
+        .welcometext {
+          font-size: 27.35px;
+          font-weight: 600;
+          color: #313131;
+        }
+        .greetingtext {
+          font-size: 16.83px;
+          font-weight: 400;
+          color: #313131;
+        }
+  </html:style>
+
+  <VBox class="sapUiSmallMargin">
+    <Text text="{greetings>/welcomeText}" class="welcometext"/>
+    <Text text="{greetings>/greetingMessage}" class="sapUiTinyMarginEnd sapUiTinyMarginTop greetingtext"/>
+  </VBox>
+</mvc:View>

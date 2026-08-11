@@ -17,6 +17,9 @@
       },
       {
         "id": "sap.workzone.cpkg.card.sample.app1"
+      },
+      {
+        "id": "com.parle.welcome.app"
       }
     ]
   }

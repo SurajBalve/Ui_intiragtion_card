@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent"],function(e){"use strict";var t=e.extend("com.parle.welcome.Component",{onCardReady:function(e){this.card=e;e.getCombinedParameters();const t=e.getCombinedParameters().category;const n=e.getDomRef();if(n){t==="internal"?n.style.background="#F5F6F7":n.style.background="#ffffffff";n.style.borderRadius="12px"}e.getManifestEntry("/sap.card")}});return t});
+//# sourceMappingURL=Component.js.map

@@ -1,0 +1,13 @@
+{
+	"_version": "1.27.0",
+	"_generator": "cpkg-project-template",
+	"sap.artifact": {
+		"id": "com.parle.welcome",
+		"type": "card",
+		"title": "Welcome ",
+		"subTitle": "",
+		"artifactVersion": {
+			"version": "1.0.0"
+		}
+	}
+}

@@ -29,10 +29,28 @@
                     }
                   }
                 ]
+              },
+              {
+                "id": "col-12",
+                "columnConfig": {},
+                "cells": [
+                  {
+                    "id": "cell-121",
+                    "cellConfig": {},
+                    "widgets": [
+                      {
+                        "id": "widg-1211",
+                        "viz": {
+                          "appId": "com.parle.welcome.app",
+                          "vizId": "com.parle.welcome.viz"
+                        }
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
-         
         ]
       }
     ]

@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/integration/Designtime"],function(e){"use strict";return function(){return new e({form:{items:{category:{manifestpath:"/sap.card/configuration/parameters/category/value",type:"string",translatable:false}}},preview:{modes:"Abstract"}})}});
+//# sourceMappingURL=configuration.js.map
