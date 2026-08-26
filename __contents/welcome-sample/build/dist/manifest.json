@@ -42,7 +42,7 @@
 		"configuration": {
 			"parameters": {
 				"firstName": {
-					"value": "Suraj",
+					"value": "{context>sap.workzone/currentUser/firstName/value}",
 					"type": "string",
 					"label": "Workzone user First name",
 					"description": "First name of the logged-in Workzone user"
