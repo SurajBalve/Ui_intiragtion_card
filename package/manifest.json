@@ -76,6 +76,22 @@
 					}
 				},
 				"baseURL": "artifacts/welcome-sample"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "ns.Analitical_card",
+						"type": "card",
+						"title": "AnaliticalCard",
+						"subTitle": "",
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/Analitical-sample"
 			}
 		],
 		"documentation": {
@@ -110,6 +126,9 @@
 						},
 						{
 							"id": "com.parle.welcome.app"
+						},
+						{
+							"id": "ns.Analitical_card.app"
 						}
 					]
 				},
@@ -195,6 +214,25 @@
 															"viz": {
 																"appId": "com.parle.welcome.app",
 																"vizId": "com.parle.welcome.viz"
+															}
+														}
+													]
+												}
+											]
+										},
+										{
+											"id": "col-13",
+											"columnConfig": {},
+											"cells": [
+												{
+													"id": "cell-131",
+													"cellConfig": {},
+													"widgets": [
+														{
+															"id": "widg-1311",
+															"viz": {
+																"appId": "ns.Analitical_card.app.app",
+																"vizId": "ns.Analitical_card.app.viz"
 															}
 														}
 													]
@@ -401,6 +439,81 @@
 					{
 						"locale": "en",
 						"textDictionary": {}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "ns.Analitical_card.app",
+					"title": "AnaliticalCard",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"ns.Analitical_card.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.15.0",
+								"sap.app": {
+									"id": "ns.Analitical_card",
+									"type": "card",
+									"title": "AnaliticalCard",
+									"subTitle": "",
+									"applicationVersion": {
+										"version": "1.0.0"
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									},
+									"icons": {
+										"icon": "sap-icon://technical-object"
+									}
+								},
+								"sap.ui5": {
+									"rootView": {
+										"viewName": "ns.Analitical_card.View",
+										"type": "XML",
+										"async": true,
+										"id": "app"
+									},
+									"dependencies": {
+										"minUI5Version": "1.38",
+										"libs": {
+											"sap.m": {},
+											"sap.viz": {}
+										}
+									}
+								},
+								"sap.card": {
+									"type": "Component",
+									"designtime": "dt/configuration",
+									"header": {
+										"title": "Visit our workshop"
+									}
+								},
+								"sap.platform.mobilecards": {
+									"compatible": false
+								}
+							},
+							"vizResources": {
+								"artifactId": "ns.Analitical_card"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
 					}
 				]
 			}

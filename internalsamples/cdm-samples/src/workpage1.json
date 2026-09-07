@@ -48,6 +48,25 @@
                     ]
                   }
                 ]
+              },
+              {
+                "id": "col-13",
+                "columnConfig": {},
+                "cells": [
+                  {
+                    "id": "cell-131",
+                    "cellConfig": {},
+                    "widgets": [
+                      {
+                        "id": "widg-1311",
+                        "viz": {
+                          "appId": "ns.Analitical_card.app.app",
+                          "vizId": "ns.Analitical_card.app.viz"
+                        }
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

@@ -39,5 +39,15 @@
 			"package": "com-parle-welcome.zip",
 			"manifest": "manifest.json"
 		}
+	},
+	"Analitical-sample":{
+		"type": "card",
+		"src": {
+			"from": "./internalsamples/Analitical_card",
+			"path": "./",
+			"build": "",
+			"package": "ns-Analitical_card.zip",
+			"manifest": "manifest.json"
+		}
 	}
 }
