@@ -93,7 +93,7 @@ sap.ui.define([
                 },
 
                 legend: {
-                    visible: false
+                    visible: true
                 },
 
                 plotArea: {
@@ -102,12 +102,45 @@ sap.ui.define([
                         showTotal: true
                     },
 
-                    colorPalette: [
-                        "#107E3E",
-                        "#0A6ED1",
-                        "#E9730C",
-                        "#BB0000"
-                    ]
+                     dataPointStyle: {
+                rules: [
+                    {
+                        dataContext: {
+                            Status: "Completed"
+                        },
+                        properties: {
+                            color: "#107E3E"
+                        },
+                        displayName: "Completed"
+                    },
+                    {
+                        dataContext: {
+                            Status: "In Progress"
+                        },
+                        properties: {
+                            color: "#0A6ED1"
+                        },
+                        displayName: "In Progress"
+                    },
+                    {
+                        dataContext: {
+                            Status: "Pending"
+                        },
+                        properties: {
+                            color: "#E9730C"
+                        },
+                        displayName: "Pending"
+                    },
+                    {
+                        dataContext: {
+                            Status: "On Hold"
+                        },
+                        properties: {
+                            color: "#BB0000"
+                        },
+                        displayName: "On Hold"
+                    }
+                ]}
                 },
 
                 valueAxis: {
@@ -119,7 +152,7 @@ sap.ui.define([
 
                 categoryAxis: {
                     title: {
-                        visible: false
+                        visible: true
                     }
                 },
 
