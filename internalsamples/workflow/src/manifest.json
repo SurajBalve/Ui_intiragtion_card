@@ -7,7 +7,7 @@
 		"title": "{{TITLE}}",
 		"subTitle": "{{SUBTITLE}}",
 		"artifactVersion": {
-			"version": "1.0.0"
+			"version": "1.0.1"
 		},
 		"shortTitle": "{{SHORTTITLE}}",
 		"info": "{{INFO}}",

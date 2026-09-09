@@ -3,7 +3,7 @@
 		"id": "ns.ui_card",
 		"__id": "sap.workzone.cpkg.card.sample.sample",
 		"packageVersion": {
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -13,9 +13,6 @@
 		"shortTitle": "",
 		"info": "",
 		"description": "",
-		"tags": {
-			"keywords": []
-		},
 		"vendor": {
 			"id": "",
 			"name": "",
@@ -55,7 +52,7 @@
 							]
 						},
 						"artifactVersion": {
-							"version": "1.0.0"
+							"version": "1.0.1"
 						}
 					}
 				},
@@ -71,7 +68,7 @@
 						"title": "Welcome ",
 						"subTitle": "",
 						"artifactVersion": {
-							"version": "1.0.0"
+							"version": "1.0.1"
 						}
 					}
 				},
@@ -87,7 +84,7 @@
 						"title": "AnaliticalCard",
 						"subTitle": "",
 						"artifactVersion": {
-							"version": "1.0.0"
+							"version": "1.0.1"
 						}
 					}
 				},
@@ -96,11 +93,6 @@
 		],
 		"documentation": {
 			"url": ""
-		},
-		"consumption": [],
-		"dependencies": {
-			"products": [],
-			"services": []
 		},
 		"destinations": [],
 		"cdmEntities": [
@@ -277,7 +269,7 @@
 									"title": "{{TITLE}}",
 									"subTitle": "{{SUBTITLE}}",
 									"applicationVersion": {
-										"version": "1.0.0"
+										"version": "1.0.1"
 									},
 									"shortTitle": "{{SHORTTITLE}}",
 									"info": "{{INFO}}",
@@ -318,7 +310,7 @@
 											"info": {
 												"value": "{UnitPrice}"
 											},
-											"highlight": "{=${UnitPrice} <60 ? 'Success' : 'Warning'}"
+											"highlight": "{=${UnitPrice} <20 ? 'Success' : 'Warning'}"
 										}
 									}
 								}
@@ -374,7 +366,7 @@
 									"title": "Welcome ",
 									"subTitle": "",
 									"applicationVersion": {
-										"version": "1.0.0"
+										"version": "1.0.1"
 									}
 								},
 								"sap.ui": {
@@ -462,7 +454,7 @@
 									"title": "AnaliticalCard",
 									"subTitle": "",
 									"applicationVersion": {
-										"version": "1.0.0"
+										"version": "1.0.1"
 									}
 								},
 								"sap.ui": {
@@ -495,7 +487,7 @@
 									"type": "Component",
 									"designtime": "dt/configuration",
 									"header": {
-										"title": "Visit our workshop"
+										"title": "Analitical Card"
 									}
 								},
 								"sap.platform.mobilecards": {

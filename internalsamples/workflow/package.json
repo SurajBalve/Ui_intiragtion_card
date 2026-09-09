@@ -1,6 +1,6 @@
 {
 	"name": "sap-workzone-cpkg-workflow-sample",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Sample project structure for a workflow artifact that will be included into a content package",
 	"scripts": {
 		"build": "node scripts/build.js"

@@ -6,7 +6,7 @@
 		"title": "AnaliticalCard",
 		"subTitle": "",
 		"applicationVersion": {
-			"version": "1.0.0"
+			"version": "1.0.1"
 		}
 	},
 	"sap.ui": {
@@ -40,7 +40,7 @@
 		"type": "Component",
 		"designtime": "dt/configuration",
 		"header": {
-			"title": "Visit our workshop"
+			"title": "Analitical Card"
 		}
 	},
 	"sap.platform.mobilecards": {
